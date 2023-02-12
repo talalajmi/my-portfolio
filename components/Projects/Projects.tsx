@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import styles from "./Projects.module.css";
 
 type Project = {
   img: string;
@@ -45,46 +46,62 @@ const projects: Project[] = [
   },
 ];
 
+const imageInitialAnimation = {
+  y: -300,
+  opacity: 0,
+};
+
+const imageAnimationDuration = { duration: 1.2 };
+
+const imageWhileInViewAnimation = { opacity: 1, y: 0 };
+
+const contentInitialAnimation = {
+  opacity: 0,
+};
+
+const contentAnimationDuration = {
+  duration: 1.5,
+};
+
+const contentAnimatedState = {
+  opacity: 1,
+};
+
 function Projects() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className="relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
+      initial={contentInitialAnimation}
+      animate={contentAnimatedState}
+      transition={contentAnimationDuration}
+      className={styles.content}
     >
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
-        Projects
-      </h3>
+      <h3 className="sectionName">Projects</h3>
 
-      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#A21717]/80 scrollbar-thumb-rounded-full">
+      <div className="relative z-20 mt-5 flex w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#A21717]/80 scrollbar-thumb-rounded-full">
         {projects.map((project, i) => (
           <motion.div
             key={i}
             className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center  space-y-5 p-20 md:p-44"
           >
             <motion.img
-              initial={{
-                y: -300,
-                opacity: 0,
-              }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={imageInitialAnimation}
+              transition={imageAnimationDuration}
+              whileInView={imageWhileInViewAnimation}
               viewport={{ once: true }}
               src={project.img}
               alt=""
-              className="h-24 w-24"
+              className={styles.image}
             />
 
             <div className="max-w-6xl space-y-10 px-0 md:px-10">
-              <h4 className="text-center text-4xl font-semibold">
+              <h4 className="text-center text-3xl font-semibold md:text-4xl">
                 <span className="underline decoration-[#A21717]">
                   Project {i + 1} of {projects.length}:{" "}
                 </span>
                 {project.name}
               </h4>
 
-              <p className="text-center text-lg md:text-left">
+              <p className="max-h-72 overflow-y-scroll  text-left text-lg md:h-0 md:overflow-y-visible">
                 {project.description}
               </p>
             </div>

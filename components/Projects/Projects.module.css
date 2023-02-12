@@ -1,0 +1,7 @@
+.content {
+  @apply relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row;
+}
+
+.image {
+  @apply h-24 w-24;
+}
