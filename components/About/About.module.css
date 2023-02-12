@@ -7,7 +7,7 @@
 }
 
 .informationContainer {
-  @apply space-y-10 px-0 md:px-10;
+  @apply space-y-5 px-0  md:space-y-10 md:px-10;
 }
 
 .boldText {
