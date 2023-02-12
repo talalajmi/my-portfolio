@@ -30,10 +30,12 @@ const Skill = ({ directionLeft, skillImg, skillMastery }: Props) => {
         whileInView={whileInViewAnimation}
         viewport={{ once: true }}
         className={styles.image}
-        src={skillImg}
+        src={`group-hover:grayscale ${skillImg}`}
         alt="skill-image"
       />
-      <div className={styles.roundedContainer}>
+      <div
+        className={`group-hover:bg-white group-hover:opacity-80 ${styles.roundedContainer}`}
+      >
         <div className={styles.centerContent}>
           <p className={styles.skillPercentage}>{skillMastery}%</p>
         </div>
