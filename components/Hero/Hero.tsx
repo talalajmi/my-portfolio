@@ -10,7 +10,7 @@ import Link from "next/link";
 interface HeroProps {}
 
 const animatedText = {
-  words: ["Hi, I am Talal Al Ajmi", "<FrontendDeveloper />", "Freelancer"],
+  words: ["Hi, I am Talal Al Ajmi", "<FrontendDev />", "Freelancer"],
   loop: true,
   delaySpeed: 2000,
 };
