@@ -29,8 +29,8 @@ const Skill = ({ directionLeft, skillImg, skillMastery }: Props) => {
         transition={animationDuration}
         whileInView={whileInViewAnimation}
         viewport={{ once: true }}
-        className={styles.image}
-        src={`group-hover:grayscale ${skillImg}`}
+        className={`group-hover:grayscale ${styles.image}`}
+        src={skillImg}
         alt="skill-image"
       />
       <div
