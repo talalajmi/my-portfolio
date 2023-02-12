@@ -1,0 +1,19 @@
+.header {
+  @apply sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-5;
+}
+
+.header:xl {
+  @apply items-center;
+}
+
+.socialIconsContainer {
+  @apply flex flex-row items-center;
+}
+
+.mailIconContainer {
+  @apply flex flex-row items-center text-gray-300 cursor-pointer;
+}
+
+.ctaText {
+  @apply uppercase hidden md:inline-flex text-sm text-gray-400;
+}
