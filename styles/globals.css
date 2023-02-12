@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-[rgb(36,36,36)];
+}
+
 @layer components {
   .heroButton {
     @apply rounded-full border border-[#242424] px-6 py-2 text-xs uppercase tracking-widest text-gray-500 transition-all;
