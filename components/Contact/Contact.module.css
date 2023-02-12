@@ -7,7 +7,7 @@
 }
 
 .text {
-  @apply mt-28 text-center text-3xl font-semibold md:mt-0 md:text-4xl;
+  @apply mt-20 text-center text-xl font-semibold md:mt-0 md:text-4xl;
 }
 
 .underlineText {
@@ -35,5 +35,5 @@
 }
 
 .iconText {
-  @apply text-2xl;
+  @apply text-lg md:text-2xl;
 }

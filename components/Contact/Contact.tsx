@@ -26,7 +26,7 @@ const Contact = () => {
           <span className={styles.underlineText}>Let&apos;s Talk.</span>
         </h4>
 
-        <div className="space-y-10">
+        <div className="space-y-5">
           <div className={styles.row}>
             <PhoneIcon className={styles.icon} />
             <p className={styles.iconText}>+968 92750800</p>
