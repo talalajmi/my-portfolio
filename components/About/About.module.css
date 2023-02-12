@@ -1,0 +1,23 @@
+.content {
+  @apply relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left;
+}
+
+.image {
+  @apply mt-24 h-40 w-40 flex-shrink-0 rounded-full object-cover md:mt-0 md:h-96 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px];
+}
+
+.informationContainer {
+  @apply space-y-10 px-0 md:px-10;
+}
+
+.boldText {
+  @apply text-3xl font-semibold md:text-4xl;
+}
+
+.underlineText {
+  @apply underline decoration-[#A21717]/50;
+}
+
+.bio {
+  @apply text-sm md:text-base;
+}

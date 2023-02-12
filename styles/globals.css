@@ -25,4 +25,12 @@
   .contactInput:focus {
     @apply border-[#A21717]/40 text-white;
   }
+
+  .sectionName {
+    @apply absolute top-24 text-xl uppercase tracking-[20px] text-gray-500;
+  }
+
+  .sectionName:md {
+    @apply text-2xl;
+  }
 }

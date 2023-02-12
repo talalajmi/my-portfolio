@@ -43,11 +43,6 @@ const projects: Project[] = [
     description:
       "A comprehensive online shopping platform that offers customers a convenient and seamless shopping experience. With its user-friendly design and intuitive interface, this platform makes browsing and purchasing products a breeze. Customers can easily view a selection of products, including detailed information and images, add items to their cart, and complete their purchases securely using Stripe's payment gateway. Please note that the Stripe payment portal is in test mode and should not be used with real credit card information. The platform is designed to provide a smooth and efficient shopping experience, with state management handled seamlessly in the background. The stylish design, accomplished with CSS, adds to the overall appeal of the platform and creates a visually pleasing shopping experience. Whether you are a seasoned online shopper or just starting, this e-commerce application is a great example of how shopping online can be easy, secure, and enjoyable.",
   },
-  {
-    img: "https://w7.pngwing.com/pngs/266/560/png-transparent-python-computer-icons-programmer-javascript-programming-language-python-logo-angle-text-logo.png",
-    name: "Simple Property finder App",
-    description: "Lorem Ipsum",
-  },
 ];
 
 function Projects() {
