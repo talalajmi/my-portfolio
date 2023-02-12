@@ -1,7 +1,6 @@
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
-
-type Props = {};
+import styles from "./Contact.module.css";
 
 type FormInputs = {
   name: string;
@@ -10,7 +9,7 @@ type FormInputs = {
   message: string;
 };
 
-const Contact = (props: Props) => {
+const Contact = () => {
   const { register, handleSubmit } = useForm<FormInputs>();
 
   const onSubmit: SubmitHandler<FormInputs> = ({ name, message, subject }) => {
@@ -18,41 +17,34 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left">
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
-        Contact
-      </h3>
+    <div className={styles.content}>
+      <h3 className="sectionName">Contact</h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-center text-4xl font-semibold">
+      <div className={styles.column}>
+        <h4 className={styles.text}>
           I have got just what you need.{" "}
-          <span className="underline decoration-[#A21717]/50">
-            Let&apos;s Talk.
-          </span>
+          <span className={styles.underlineText}>Let&apos;s Talk.</span>
         </h4>
 
         <div className="space-y-10">
-          <div className="flex items-center justify-center space-x-5">
-            <PhoneIcon className="h-7 w-7 animate-pulse text-[#A21717]" />
-            <p className="text-2xl">+968 92750800</p>
+          <div className={styles.row}>
+            <PhoneIcon className={styles.icon} />
+            <p className={styles.iconText}>+968 92750800</p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5">
-            <MapPinIcon className="h-7 w-7 animate-pulse text-[#A21717]" />
-            <p className="text-2xl">Muscat, Oman</p>
+          <div className={styles.row}>
+            <MapPinIcon className={styles.icon} />
+            <p className={styles.iconText}>Muscat, Oman</p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5">
-            <EnvelopeIcon className="h-7 w-7 animate-pulse text-[#A21717]" />
-            <p className="text-2xl">talalajmi98@gmail.com</p>
+          <div className={styles.row}>
+            <EnvelopeIcon className={styles.icon} />
+            <p className={styles.iconText}>talalajmi98@gmail.com</p>
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="mx-auto flex w-fit flex-col space-y-2"
-        >
-          <div className="flex space-x-2">
+        <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+          <div className={styles.inputRow}>
             <input
               {...register("name")}
               type="text"
@@ -78,10 +70,7 @@ const Contact = (props: Props) => {
             placeholder="Message"
             className="contactInput"
           ></textarea>
-          <button
-            type="submit"
-            className="rounded-md bg-[#A21717] py-5 px-10 text-lg font-bold text-black transition duration-200 ease-in-out hover:scale-105 hover:bg-[#A21717]/80 active:scale-75"
-          >
+          <button type="submit" className={styles.formButton}>
             Submit
           </button>
         </form>

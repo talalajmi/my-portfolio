@@ -15,7 +15,7 @@
 }
 
 .underlineText {
-  @apply underline decoration-[#A21717]/50;
+  @apply underline decoration-[#A21717]/80;
 }
 
 .bio {

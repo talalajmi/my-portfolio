@@ -1,0 +1,39 @@
+.content {
+  @apply relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left;
+}
+
+.column {
+  @apply flex flex-col space-y-10;
+}
+
+.text {
+  @apply mt-28 text-center text-3xl font-semibold md:mt-0 md:text-4xl;
+}
+
+.underlineText {
+  @apply underline decoration-[#A21717]/70;
+}
+
+.row {
+  @apply flex items-center justify-center space-x-5;
+}
+
+.icon {
+  @apply h-7 w-7 animate-pulse text-[#A21717];
+}
+
+.form {
+  @apply mx-auto flex w-80 flex-col space-y-2 md:w-fit;
+}
+
+.formButton {
+  @apply rounded-md bg-[#A21717] py-5 px-10 text-lg font-bold text-black transition duration-200 ease-in-out hover:scale-105 hover:bg-[#A21717]/80 active:scale-75;
+}
+
+.inputRow {
+  @apply flex flex-col space-y-2  md:flex-row md:space-y-0 md:space-x-2;
+}
+
+.iconText {
+  @apply text-2xl;
+}
