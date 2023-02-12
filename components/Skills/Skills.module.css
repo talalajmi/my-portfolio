@@ -1,0 +1,11 @@
+.content {
+  @apply relative mx-auto flex min-h-screen max-w-[2000px] flex-col items-center justify-center text-center md:text-left xl:flex-row xl:space-y-0 xl:px-10;
+}
+
+.heading {
+  @apply absolute top-36 text-sm uppercase tracking-[3px] text-gray-500;
+}
+
+.row {
+  @apply grid grid-cols-4 gap-5;
+}

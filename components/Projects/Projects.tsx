@@ -77,12 +77,9 @@ function Projects() {
     >
       <h3 className="sectionName">Projects</h3>
 
-      <div className="relative z-20 mt-5 flex w-full snap-x snap-mandatory overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#A21717]/80 scrollbar-thumb-rounded-full">
+      <div className={styles.carousel}>
         {projects.map((project, i) => (
-          <motion.div
-            key={i}
-            className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center  space-y-5 p-20 md:p-44"
-          >
+          <motion.div key={i} className={styles.projectContainer}>
             <motion.img
               initial={imageInitialAnimation}
               transition={imageAnimationDuration}
@@ -93,23 +90,21 @@ function Projects() {
               className={styles.image}
             />
 
-            <div className="max-w-6xl space-y-10 px-0 md:px-10">
-              <h4 className="text-center text-3xl font-semibold md:text-4xl">
-                <span className="underline decoration-[#A21717]">
+            <div className={styles.column}>
+              <h4 className={styles.projectName}>
+                <span className={styles.underlineText}>
                   Project {i + 1} of {projects.length}:{" "}
                 </span>
                 {project.name}
               </h4>
 
-              <p className="max-h-72 overflow-y-scroll  text-left text-lg md:h-0 md:overflow-y-visible">
-                {project.description}
-              </p>
+              <p className={styles.projectDescription}>{project.description}</p>
             </div>
           </motion.div>
         ))}
       </div>
 
-      <div className="absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-[#A21717]/30" />
+      <div className={styles.skewedBackgroundColor} />
     </motion.div>
   );
 }
