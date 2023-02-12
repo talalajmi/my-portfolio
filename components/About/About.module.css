@@ -3,7 +3,7 @@
 }
 
 .image {
-  @apply mt-24 h-40 w-40 flex-shrink-0 rounded-full object-cover md:mt-0 md:h-96 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px];
+  @apply mt-16 mb-0 h-40 w-40 flex-shrink-0 rounded-full object-cover md:mt-0 md:h-96 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px];
 }
 
 .informationContainer {
