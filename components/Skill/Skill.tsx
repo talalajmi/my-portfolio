@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "./Skill.module.css";
 
 interface Props {
-  directionLeft?: boolean;
+  directionDown?: boolean;
   skillImg: string;
   skillMastery: number;
 }
 
-const Skill = ({ directionLeft, skillImg, skillMastery }: Props) => {
+const Skill = ({ directionDown, skillImg, skillMastery }: Props) => {
   const initialState = {
-    x: directionLeft ? -200 : 200,
     opacity: 0,
+    y: directionDown ? -100 : 100,
   };
 
   const animationDuration = {
@@ -19,20 +20,25 @@ const Skill = ({ directionLeft, skillImg, skillMastery }: Props) => {
 
   const whileInViewAnimation = {
     opacity: 1,
-    x: 0,
+    y: 0,
   };
 
   return (
     <div className={`group ${styles.content}`}>
-      <motion.img
+      <motion.div
         initial={initialState}
         transition={animationDuration}
         whileInView={whileInViewAnimation}
         viewport={{ once: true }}
-        className={`group-hover:grayscale ${styles.image}`}
-        src={skillImg}
-        alt="skill-image"
-      />
+        className={styles.image}
+      >
+        <Image
+          className={`group-hover:grayscale ${styles.image}`}
+          src={skillImg}
+          fill
+          alt="skill-image"
+        />
+      </motion.div>
       <div
         className={`group-hover:bg-white group-hover:opacity-80 ${styles.roundedContainer}`}
       >

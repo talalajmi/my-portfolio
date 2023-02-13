@@ -28,10 +28,10 @@ const Skills = () => {
       </h3>
 
       <div className={styles.row}>
-        <Skill directionLeft skillImg={typescriptImg.src} skillMastery={85} />
-        <Skill directionLeft skillImg={javascriptImg.src} skillMastery={90} />
-        <Skill directionLeft skillImg={reactImg.src} skillMastery={90} />
-        <Skill directionLeft skillImg={reduxImg.src} skillMastery={80} />
+        <Skill directionDown skillImg={typescriptImg.src} skillMastery={85} />
+        <Skill directionDown skillImg={javascriptImg.src} skillMastery={90} />
+        <Skill directionDown skillImg={reactImg.src} skillMastery={90} />
+        <Skill directionDown skillImg={reduxImg.src} skillMastery={80} />
         <Skill skillImg={nextImg.src} skillMastery={85} />
         <Skill skillImg={tailwindImg.src} skillMastery={90} />
         <Skill skillImg={dotnetcoreImg.src} skillMastery={60} />

@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 
 import styles from "./About.module.css";
 
-import profileImg from "../../assets/images/profile-pic.png";
+import profileImg from "/assets/images/profile-pic.png";
+
+import Image from "next/image";
 
 const imageInitialAnimation = {
   x: -200,
@@ -40,15 +42,19 @@ const About = () => {
     >
       <h3 className="sectionName">About</h3>
 
-      <motion.img
+      <motion.div
         initial={imageInitialAnimation}
         transition={imageAnimationDuration}
         whileInView={imageWhileInViewAnimation}
-        src={profileImg.src}
-        alt="my-second-photo"
         className={styles.image}
         viewport={{ once: true }}
-      />
+      >
+        <Image
+          src={profileImg}
+          alt="my-second-photo"
+          className={styles.image}
+        />
+      </motion.div>
 
       <div className={styles.informationContainer}>
         <h4 className={styles.boldText}>

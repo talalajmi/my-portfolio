@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import styles from "./Hero.module.css";
 
-import myImg from "../../assets/images/talal.jpeg";
+import myImg from "/assets/images/talal.jpeg";
 import Link from "next/link";
 
 interface HeroProps {}
