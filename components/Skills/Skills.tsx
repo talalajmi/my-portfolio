@@ -3,15 +3,15 @@ import { Skill } from "../";
 
 import styles from "./Skills.module.css";
 
-import javascriptImg from "../../assets/images/javascript.png";
-import typescriptImg from "../../assets/images/typescript.png";
-import reactImg from "../../assets/images/react.png";
-import reduxImg from "../../assets/images/redux.png";
-import tailwindImg from "../../assets/images/tailwind.png";
-import dotnetcoreImg from "../../assets/images/dotnetcore.png";
-import nextImg from "../../assets/images/next.png";
-import flutterImg from "../../assets/images/flutter.png";
-import swiftImg from "../../assets/images/swift.png";
+import javascriptImg from "/assets/images/javascript.png";
+import typescriptImg from "/assets/images/typescript.png";
+import reactImg from "/assets/images/react.png";
+import reduxImg from "/assets/images/redux.png";
+import tailwindImg from "/assets/images/tailwind.png";
+import dotnetcoreImg from "/assets/images/dotnetcore.png";
+import nextImg from "/assets/images/next.png";
+import flutterImg from "/assets/images/flutter.png";
+import swiftImg from "/assets/images/swift.png";
 
 const Skills = () => {
   return (
