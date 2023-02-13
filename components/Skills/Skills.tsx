@@ -32,7 +32,7 @@ const Skills = () => {
         <Skill directionDown skillImg={javascriptImg} skillMastery={90} />
         <Skill directionDown skillImg={reactImg} skillMastery={90} />
         <Skill directionDown skillImg={reduxImg} skillMastery={80} />
-        <Skill skillImg={nextImg} skillMastery={85} />
+        <Skill skillImg={nextImg} skillMastery={85} still />
         <Skill skillImg={tailwindImg} skillMastery={90} />
         <Skill skillImg={dotnetcoreImg} skillMastery={60} />
         <Skill skillImg={flutterImg} skillMastery={70} />

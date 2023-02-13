@@ -6,12 +6,13 @@ interface Props {
   directionDown?: boolean;
   skillImg: StaticImageData;
   skillMastery: number;
+  still?: boolean;
 }
 
-const Skill = ({ directionDown, skillImg, skillMastery }: Props) => {
+const Skill = ({ directionDown, skillImg, skillMastery, still }: Props) => {
   const initialState = {
     opacity: 0,
-    y: directionDown ? -100 : 100,
+    y: still ? 0 : directionDown ? -100 : 100,
   };
 
   const animationDuration = {
