@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./Skill.module.css";
 
 interface Props {
   directionDown?: boolean;
-  skillImg: string;
+  skillImg: StaticImageData;
   skillMastery: number;
 }
 
@@ -35,7 +35,6 @@ const Skill = ({ directionDown, skillImg, skillMastery }: Props) => {
         <Image
           className={`group-hover:grayscale ${styles.image}`}
           src={skillImg}
-          fill
           alt="skill-image"
         />
       </motion.div>

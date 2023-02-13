@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import styles from "./Header.module.css";
 
 const socialIconsInitialState = {
-  x: -500,
+  y: -100,
   opacity: 0,
   scale: 0.5,
 };
 
 const socialIconsAnimatedState = {
-  x: 0,
+  y: 0,
   opacity: 1,
   scale: 1,
 };
@@ -20,13 +20,13 @@ const socialIconsTransitionDuration = {
 };
 
 const mailIconInitialState = {
-  x: 500,
+  y: -100,
   opacity: 0,
   scale: 0.5,
 };
 
 const mailIconAnimatedState = {
-  x: 0,
+  y: 0,
   opacity: 1,
   scale: 1,
 };

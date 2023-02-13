@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 
 import netflixImage from "/assets/images/netflix-clone.png";
 import airbnbImage from "/assets/images/airbnb-clone.png";
+import telypayInvoiceImage from "/assets/images/telypay-invoice.png";
 import filmpireImage from "/assets/images/filmpire.png";
 import telypayImage from "/assets/images/telypay.png";
 import ecommerceImage from "/assets/images/ecommerce.png";
@@ -17,10 +18,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    img: netflixImage.src,
+    img: telypayInvoiceImage.src,
     name: "TelyPay Invoice",
     description:
       "The TelyPay Invoice application is a tool designed to help businesses manage their invoices in an efficient and streamlined manner. Built with React and Bootstrap 5 and Redux, it provides a visually appealing and user-friendly interface that makes the invoicing process a breeze. The application is powered by typescript, a technology that helps ensure stability and reliability. Additionally, the platform integrates with TelyPay's custom API, which allows it to retrieve all the necessary data to run smoothly, making sure that the invoicing process is always up-to-date. Whether you're a technical person or not, the TelyPay Invoice application provides an easy-to-use solution for managing invoices, freeing up time to focus on other important tasks.",
+    url: "https://invoice.telypay.com",
   },
   {
     img: telypayImage.src,
@@ -55,7 +57,7 @@ const projects: Project[] = [
     name: "Simple E-Commerce App",
     description:
       "A comprehensive online shopping platform that offers customers a convenient and seamless shopping experience. With its user-friendly design and intuitive interface, this platform makes browsing and purchasing products a breeze. Customers can easily view a selection of products, including detailed information and images, add items to their cart, and complete their purchases securely using Stripe's payment gateway. Please note that the Stripe payment portal is in test mode and should not be used with real credit card information. The platform is designed to provide a smooth and efficient shopping experience, with state management handled seamlessly in the background. The stylish design, accomplished with CSS, adds to the overall appeal of the platform and creates a visually pleasing shopping experience. Whether you are a seasoned online shopper or just starting, this e-commerce application is a great example of how shopping online can be easy, secure, and enjoyable.",
-    url: "https://simple-e-commerce-app.web.app/",
+    url: "https://ecommerce-app-omega-two.vercel.app/",
   },
 ];
 

@@ -28,15 +28,15 @@ const Skills = () => {
       </h3>
 
       <div className={styles.row}>
-        <Skill directionDown skillImg={typescriptImg.src} skillMastery={85} />
-        <Skill directionDown skillImg={javascriptImg.src} skillMastery={90} />
-        <Skill directionDown skillImg={reactImg.src} skillMastery={90} />
-        <Skill directionDown skillImg={reduxImg.src} skillMastery={80} />
-        <Skill skillImg={nextImg.src} skillMastery={85} />
-        <Skill skillImg={tailwindImg.src} skillMastery={90} />
-        <Skill skillImg={dotnetcoreImg.src} skillMastery={60} />
-        <Skill skillImg={flutterImg.src} skillMastery={70} />
-        <Skill skillImg={swiftImg.src} skillMastery={10} />
+        <Skill directionDown skillImg={typescriptImg} skillMastery={85} />
+        <Skill directionDown skillImg={javascriptImg} skillMastery={90} />
+        <Skill directionDown skillImg={reactImg} skillMastery={90} />
+        <Skill directionDown skillImg={reduxImg} skillMastery={80} />
+        <Skill skillImg={nextImg} skillMastery={85} />
+        <Skill skillImg={tailwindImg} skillMastery={90} />
+        <Skill skillImg={dotnetcoreImg} skillMastery={60} />
+        <Skill skillImg={flutterImg} skillMastery={70} />
+        <Skill skillImg={swiftImg} skillMastery={10} />
       </div>
     </motion.div>
   );
