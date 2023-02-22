@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <title>Talal Al Ajmi&apos;s Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="z-0 max-h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth text-white overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#A21717]/80 scrollbar-thumb-rounded-full">
