@@ -5,6 +5,7 @@ import styles from "./Projects.module.css";
 import netflixImage from "/assets/images/netflix-clone.png";
 import airbnbImage from "/assets/images/airbnb-clone.png";
 import telypayInvoiceImage from "/assets/images/telypay-invoice.png";
+import aiSummarizerImage from "/assets/images/ai-summarizer.png";
 import filmpireImage from "/assets/images/filmpire.png";
 import telypayImage from "/assets/images/telypay.png";
 import ecommerceImage from "/assets/images/ecommerce.png";
@@ -17,6 +18,13 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    img: aiSummarizerImage.src,
+    name: "AI Article Summarizer",
+    description:
+      "The AI Article Summarizer is a tool that helps users summarize articles in a matter of seconds. The application uses GPT-4 to generate summaries, which are then displayed in a user-friendly interface. The application is built with React and tailwind CSS, making it easy to use and visually appealing. Whether you're a student or a professional, the AI Article Summarizer is a great tool for summarizing articles quickly and efficiently.",
+    url: "https://ai-article-summarizer-ten.vercel.app/",
+  },
   {
     img: telypayInvoiceImage.src,
     name: "TelyPay Invoice",
